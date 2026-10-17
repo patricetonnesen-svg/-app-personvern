@@ -1,1 +1,106 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Foreløpig personverninformasjon for Off-Grid Vault fra Tønnesen Apps.">
+  <title>Off-Grid Vault – personvern | Tønnesen Apps</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; }
+    body { margin: 0; color: #18251d; background: #f6f8f2; }
+    main { max-width: 48rem; margin: auto; padding: 2rem 1.25rem 4rem; }
+    h1, h2 { line-height: 1.25; } h1 { font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { margin-top: 2rem; font-size: 1.35rem; }
+    a { color: #185b40; text-underline-offset: .18em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #916900; outline-offset: 4px; }
+    .publisher { font-weight: 650; letter-spacing: .04em; }
+    .status { background: #fff0c6; border-left: 4px solid #916900; padding: 1rem; border-radius: .35rem; }
+    footer { margin-top: 3rem; border-top: 1px solid #bcc8bd; padding-top: 1rem; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e2eadf; background: #142019; }
+      a { color: #a3d9b9; } .status { background: #3e351a; border-color: #e1bd59; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="publisher">Tønnesen Apps</p>
+    <h1>Personvern i Off-Grid Vault</h1>
+    <p>Sist oppdatert: <time datetime="2026-10-17">17. oktober 2026</time></p>
+    <p class="status"><strong>Foreløpig informasjon før lansering.</strong> Appen er under
+      klargjøring. Kontakt: <a href="mailto:tonnesen.apps@outlook.com">tonnesen.apps@outlook.com</a>.
+      Denne teksten må gjennomgås og publiseres før appen lanseres.</p>
+  </header>
+  <section aria-labelledby="local">
+    <h2 id="local">Hvelvet og lokal lagring</h2>
+    <p>Dokumenter, kort og notater lagres i et kryptert hvelv i appens private
+      lagring på enheten. Appen har ingen egen server, brukerkonto eller skybackup.
+      Android-backup og automatisk enhetsoverføring er deaktivert for appen.</p>
+    <p>Passord og nøkkelmateriale beskytter hvelvet. Valgfri biometri håndteres av
+      Android; appen lagrer ingen database med ansikter eller fingeravtrykk.
+      Tapt passord, enhet eller nøkkel kan føre til permanent tap av innholdet.</p>
+  </section>
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">Tillatelser og nødverktøy</h2>
+    <p>Appen kan bruke kameraets LED til lommelykt, sensorer til kompass og
+      stedstillatelse til posisjonsvisning. Appen lagrer ikke stedshistorikk.
+      Tilgjengelig presisjon avhenger av tillatelsen, enheten og målingen.
+      Posisjon kopieres eller deles bare når du velger det. Utklippstavlen og
+      mottakerappen har egne regler for lagring og videre bruk.</p>
+    <p>Appen kan foreslå land fra SIM-landkode uten å lese telefonnummer eller
+      kontakter. Du må bekrefte faktisk oppholdsland før et nødnummer åpnes i
+      telefonappen. Språk og valgt land lagres lokalt som innstillinger.</p>
+  </section>
+  <section aria-labelledby="bluetooth">
+    <h2 id="bluetooth">Meldinger via Bluetooth</h2>
+    <p>Nærmeldinger sendes lokalt med Bluetooth LE. Enhetsadresser, meldingskøer
+      og tekst behandles i minnet under økten. Meldingshistorikken tømmes når
+      appen går i bakgrunnen. Uttrykkelig sletting kobler også fra. Androids
+      paringer beholdes til du fjerner dem i systemets Bluetooth-innstillinger.</p>
+    <p>Parede forbindelser bruker Bluetooth-kryptering mellom to nabotelefoner.
+      Dette bekrefter ikke hvem personen er, og er ikke ende-til-ende-kryptering.
+      Godkjente mottakere og reléer kan lese og kopiere teksten. Videresending i
+      Pro krever at du aktiverer den for hver økt. Unngå hemmelige opplysninger.
+      Appen kan ikke fjernslette kopier på andre enheter.</p>
+  </section>
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">Import, eksport og eksterne tjenester</h2>
+    <p>Import og eksport bruker Androids filvelger. Eksport oppretter en
+      ukryptert kopi hos fil- eller skyleverandøren du velger. Leverandøren kan
+      synkronisere kopien. Delte dokumenter og posisjonstekst behandles også av
+      mottakeren. Guidekilder og eksterne lenker åpnes i nettleseren ved trykk.</p>
+    <p>Google Play håndterer engangskjøpet av Pro. Kjøp og gjenoppretting krever
+      Google Play og nett. Bekreftet tilgang mellomlagres kryptert lokalt slik at
+      Pro kan brukes uten nett. Google Play Billing og Play-tjenester kan behandle
+      kjøps-, enhets- og diagnostikkdata etter Googles regler. Appen har ingen
+      egen analyse-, reklame- eller krasjrapporteringstjeneste.</p>
+    <p>Les også <a href="https://policies.google.com/privacy">Googles personvernerklæring</a>.
+      Denne nettsiden er ment publisert med GitHub Pages. GitHub kan behandle
+      IP-adresse og forespørselsdata når du besøker siden. Se
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs personvernerklæring</a>.
+      Siden bruker ingen egne informasjonskapsler, sporingsskript eller eksterne skrifter.</p>
+  </section>
+  <section aria-labelledby="deletion">
+    <h2 id="deletion">Lagring og sletting</h2>
+    <p>Du kan slette hvelvoppføringer i appen. Hele den lokale lagringen, inkludert
+      innstillinger og mellomlagret Pro-status, kan slettes i Androids appinnstillinger
+      eller ved avinstallering. Eksporterte filer, delte kopier og meldinger hos
+      mottakere må slettes hos den aktuelle leverandøren eller mottakeren.
+      Bluetooth-paringer fjernes separat i Android.</p>
+  </section>
+  <section aria-labelledby="contact">
+    <h2 id="contact">Utgiver, kontakt og endringer</h2>
+    <p>Utgiver er Tønnesen Apps. Spørsmål og forespørsler om personvern kan sendes til
+      <a href="mailto:tonnesen.apps@outlook.com">tonnesen.apps@outlook.com</a>.
+      Ikke send passord eller hvelvinnhold på e-post. Ikke legg andre sensitive opplysninger i
+      offentlige GitHub-saker.</p>
+    <p>Endringer i informasjonen publiseres på denne siden med oppdatert dato.
+      Denne foreløpige teksten er ikke en bekreftelse på ferdig juridisk
+      gjennomgang eller godkjenning fra Google Play.</p>
+  </section>
+  <footer><p>Off-Grid Vault · Tønnesen Apps</p></footer>
+</main>
+</body>
+</html>
 
